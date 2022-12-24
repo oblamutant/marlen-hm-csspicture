@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.minion{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle{
+    background-color: #fff;     
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -150%;
+    transform: translateX(-50%);
+    border: 25px solid #6c7871;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.close{
+    background-color: #f5d300;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+transition: .5s linear;
+
+}
+
+.circle:hover .close{
+    height: 180px;
+
+}
+
+.minion-body{
+    height: 700px;
+    width: 450px;
+    background-color: #f5d300;
+    border-radius: 200px;
+    position: relative;
+}
+
+.line{
+    background-color: #020107;
+    height: 45px;
+    position: absolute;
+    top: 155px;
+    width: 450px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    position: relative;
+}
+
+.brown{
+    background-color: #523515;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black{
+    height: 40px;
+    width: 40px;
+    background-color: #020107;
+    border-radius: 50%;
+}
+
+.minion-hand-left, .minion-hand-right{
+    width: 250px;
+    height: 60px;
+    background-color: #f5d300;
+    position: absolute;
+    
+
+}
+
+.minion-hand-left{
+    transform: rotate(45deg);
+    left: -185px;
+    top: 40%;
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+
+.minion-hand-right{
+    right: -185px;
+    transform: rotate(45deg);
+    top: 60%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+}
+
+.foot-left{
+width: 250px;
+height: 60px;
+background-color: #f5d300;
+transform: rotate(90deg);
+}
+
+.foot-right{
+width: 250px;
+height: 60px;
+background-color: #f5d300;
+transform: rotate(90deg);
+}
+
+.minion-feet{
+   
+    position: relative;
+}
+
+.foot-left, .foot-right{
+    position: absolute;
+
+}
+
+.foot-left{
+    left: 5%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+
+}
+.foot-right{
+    right: 43%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+
+}
+
+.mouth{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5a2700;
+    height: 70px;
+    width: 175px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    overflow: hidden;
+}
+.lang{
+    height: 0px;
+    width: 80px;
+    background-color: #b23333;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transition: .3s ease-in-out;
+}
+
+.mouth:hover .lang{
+    height: 40px;
+}
+.teeth{
+    background-color: #fff;
+    width: 10px;
+    height: 0px;
+    transition: .1s ease-in-out;
+}
+
+.teeth1, .teeth2{
+    position: absolute;
+    top: 0;
+}
+
+.teeth1{
+    left: 30%;
+    border-bottom-left-radius: 80%;
+
+}
+
+.teeth2{
+    right: 30%;
+    border-bottom-right-radius: 80%;
+}
+
+.mouth:hover .teeth{
+    height: 30px;
+}
+
+.content{
+    position: absolute;
+    top: -18%;
+    left: -94%;
+    transform: rotate(-45deg);
+    width: 250px;
+}
