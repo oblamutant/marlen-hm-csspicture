@@ -203,4 +203,9 @@ transform: rotate(90deg);
     left: -94%;
     transform: rotate(-45deg);
     width: 250px;
+    display: none;
+}
+
+.minion-hand-left:hover .content{
+    display: block;
 }
